@@ -7,15 +7,15 @@
 def sum_of_div_by_35(to=10):
     result = 0
     for i in range(1, to):
-        if i % 3 == 0 or i % 5 == 0:
+        if div_by_35(i):
             result += i
 
     return result
 
-print(sum_of_div_by_35(4))
+def div_by_35(i):
+    return True if (i % 3 == 0) or (i % 5 == 0) else False
 
-def div_by_35:
-    return i % 3 == 0 or i % 5 == 0:
+print(sum_of_div_by_35())
 
 # END
 # NOTES :
